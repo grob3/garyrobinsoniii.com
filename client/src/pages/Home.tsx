@@ -1,31 +1,23 @@
-import { useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Resume from "@/components/Resume";
-import Skills from "@/components/Skills";
-import Portfolio from "@/components/Portfolio";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/navigation";
+import HeroSection from "@/components/hero-section";
+import AboutSection from "@/components/about-section";
+import SkillsSection from "@/components/skills-section";
+import PortfolioSection from "@/components/portfolio-section";
+import BlogSection from "@/components/blog-section";
+import ContactSection from "@/components/contact-section";
+import Footer from "@/components/footer";
 
-const Home = () => {
-  useEffect(() => {
-    // Set page title and metadata
-    document.title = "Gary Robinson III | Professional Portfolio";
-  }, []);
-
+export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <Hero />
-      <About />
-      <Resume />
-      <Skills />
-      <Portfolio />
-      <Contact />
+    <div className="min-h-screen">
+      <Navigation />
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <PortfolioSection />
+      <BlogSection />
+      <ContactSection />
       <Footer />
     </div>
   );
-};
-
-export default Home;
+}

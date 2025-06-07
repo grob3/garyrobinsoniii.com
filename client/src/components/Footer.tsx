@@ -1,24 +1,13 @@
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
+export default function Footer() {
   return (
-    <footer className="py-10 bg-background border-t border-gray-800">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
-            <a href="#hero" className="text-white font-display text-2xl font-bold tracking-wider">
-              GR<span className="text-primary">III</span>
-            </a>
-          </div>
-          
-          <div className="text-center md:text-right">
-            <p className="text-gray-400">&copy; {currentYear} Gary Robinson III. All rights reserved.</p>
-            <p className="text-gray-500 text-sm mt-1">Designed with precision and excellence.</p>
-          </div>
+    <footer className="bg-secondary text-white py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="text-gray-400">
+            © 2024 Gary Robinson III. All rights reserved. Built with passion and modern web technologies.
+          </p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
